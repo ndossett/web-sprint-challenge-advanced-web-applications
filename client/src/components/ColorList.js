@@ -30,7 +30,7 @@ const ColorList = ({ colors, updateColors}) => {
     })
   };
 
-  console.log(colors, "this one")
+ 
   const deleteColor = color => {
     // make a delete request to delete this color
     // handleDelete();
