@@ -17,18 +17,18 @@ function App() {
         <NavLink exact to='/login'>
           Login
         </NavLink>
-        <NavLink exact to='/bubble-page-add'>
+        {/* <NavLink exact to='/bubble-page-add'>
           Add Color
-        </NavLink>
+        </NavLink> */}
         </div>
       </nav>
     
       <Switch>
-        <Route path='/login' component={Login} />
-        <Route path="/bubble-page-add">
-          <AddColor />
-        </Route>
         <PrivateRoute exactpath='/bubble-page' component={BubblePage} />
+        <Route path='/login' component={Login} />
+        {/* <Route path="/bubble-page-add">
+          <AddColor />
+        </Route> */}
         <Route path='/' component={Login} />
       </Switch>
     </Router>

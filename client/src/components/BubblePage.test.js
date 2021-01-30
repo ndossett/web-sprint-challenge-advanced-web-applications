@@ -5,5 +5,5 @@ import BubblePage from "./BubblePage";
 test("Fetches data and renders the bubbles", async () => {
 
   const { getByText } = render(<BubblePage />);
-  getByText("bubbles");
+  await screen.getByText("bubbles");
 });
